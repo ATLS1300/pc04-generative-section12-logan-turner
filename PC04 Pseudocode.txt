@@ -134,8 +134,4 @@ Turtle #3 stamp
 End program
 
 
-
-
-
-
-Anticipated result:
+Anticipated result: (image on Canvas submission)
