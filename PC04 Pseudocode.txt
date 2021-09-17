@@ -1,0 +1,141 @@
+﻿I want to make different shapes that somewhat resemble flowers with a color palette similar to such because I think it would make an interesting garden picture each time. I will use a polygon shape, star stamp, and star shape.
+
+
+I chose to have the fill color, pen color, speed, and line thickness picked randomly from an array (colors) or range (speed & thickness) because it will produce unique flowers. I also have the individual shape locations set to a random range, but this range is very small so as to not draw the same flower in the same location each iteration while also still maintaining the appearance of a garden.
+
+
+Housekeeping
+Import turtle
+Import math
+Import random
+
+
+Establish Variables
+        Set up an array of colors from coolors scheme for fill
+        Set up an array of colors from coolors scheme for pen
+        Name turtle #1
+        Name turtle #2
+        Name turtle #3
+        Make a panel
+                
+        Set the stage (this builds the shrub where the flowers will sprout from)
+                Turtle #1 set pen color
+                Turtle #1 set fill color
+                Turtle #1 pen up
+                Turtle #1 go to left edge of page (-300, 200)
+                        Turtle #1 pen down
+                        Turtle #1 begin fill
+                        Turtle #1 set heading
+                        Turtle #1 draw sine wave to (300, 200)
+                        Turtle #1 set heading
+                        Turtle #1 go to (300, -300)
+                        Turtle #1 set heading
+                        Turtle #1 go to (-300, -300)
+                        Turtle #1 set heading
+                        Turtle #1 go to (-300, 200)
+                        Turtle #1 end fill
+
+
+        Set shape variables
+                # of iterations per circle
+                Angle between shapes
+                Radius of circle
+                Set side length
+                Set size
+
+
+Set Up
+        Set colors
+                Set background color
+                Turtle #1 pick fill
+                        Use random
+                Turtle #1 pick line
+                        Use random
+                Turtle #2 pick fill
+                        Use random
+                Turtle #2 pick line
+                        Use random
+                Turtle #3 pick fill
+                        Use random
+                Turtle #3 pick line
+                        Use random
+
+
+Housekeeping
+                Turtle #1 pen up
+                Turtle #2 pen up
+                Turtle #3 pen up
+
+
+        Set turtle location(s)
+                Turtle #1 go to location
+                        Random range
+                Turtle #2 go to location
+                        Random range
+                Turtle #3 go to location
+                        Random range
+
+
+        Set pen speed and thickness
+                Turtle #1 pen thickness
+                        Random range (1-10)
+                Turtle #1 speed
+                        Random range (5-10)
+                Turtle #2 pen thickness
+                        Random range (1-10)
+                Turtle #2 speed
+                        Random range (5-10)
+                Turtle #2 pen thickness
+                        Random range (1-10)
+                Turtle #2 speed
+                        Random range (5-10)
+
+
+Start drawing!
+For loops
+                
+        Turtle #1
+For i in range (# of sides)
+        Turtle #1 pen down
+        Turtle #1 begin fill
+        Turtle #1 set heading
+                        Turtle #1 go forward
+                        Turtle #1 turn at angle
+                        Code from: https://docs.python.org/3/library/turtle.html for turtle star
+
+
+        Turtle # 2
+                Turtle #2 pen down
+                Turtle #2 set heading
+                For i in range (# of sides)
+                        Turtle #2 draw polygon
+                                Turtle #2 pen down
+                                Begin fill
+                                Size
+                                # of sides
+                                Switch color of pen at each line
+                                        random
+                                End fill
+                                Radius of circle
+                                # of iterations per circle
+                                Angle between shapes
+                                Set side length
+        
+Turtle #3
+Turtle #3 change shape to star
+Turtle #3 pen down
+Turtle #3 begin fill
+For i in range (# of turtles)
+        Turtle #3 set heading
+Turtle #3 stamp
+        Turtle #3 go forward
+
+
+End program
+
+
+
+
+
+
+Anticipated result:
